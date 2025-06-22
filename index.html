@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <link rel="stylesheet" href="styles/index.css">
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +19,9 @@
             extend: {
                 colors: {
                     clifford: '#da373d',
+                },
+                fontfamily:{
+                    manrope: ["Manrope", "sans-serif"],
                 }
             }
         } 
@@ -25,7 +29,7 @@
     </script>
 
 </head>
-<body>
+<body class="font-manrope">
     <!-- main content -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
         <!-- header section -->
@@ -143,18 +147,18 @@
                     <!-- middle card -->
                     <div class="absolute z-10 top-44 md:top-52">
                         <div class="h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-6 ">
-                        <div class="absolute -top-5 -left-5 bg-white rounded-full">
-                            <img class="p-1" src="/images/client.png" alt="">
+                            <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                                <img class="p-1" src="/images/client.png" alt="">
+                            </div>
+                            <div>
+                                <p class="text-gray-500 mb-5">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                                <h1 class="font-bold">Ilham Yuda</h1>
+                                <small class="font-bold text-gray-500">Businessman</small>
+                            </div>
+                            <div class="absolute top-47 left-50 md:top-46 md:right-34">
+                                <img src="images/circles.png" alt="">
+                            </div>
                         </div>
-                        <div>
-                            <p class="text-gray-500 mb-5">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
-                            <h1 class="font-bold">Ilham Yuda</h1>
-                            <small class="font-bold text-gray-500">Businessman</small>
-                        </div>
-                        <div class="absolute top-46 right-34">
-                            <img src="images/circles.png" alt="">
-                        </div>
-                    </div>
                     </div>
                     <!-- top card -->
                     <div class="relative left-7 md:left-32 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-6 opacity-40">
@@ -224,9 +228,81 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-
+    <footer class="bg-gradient-to-r from-orange-50 to-red-100 text-gray-700 py-10 px-4 md:px-16">
+        <div class="max-w-screen-xl mx-auto px-16 lg:px-28 ">
+            <!-- logo -->
+            <div class="mb-8 flex justify-between">
+                <img class="mb-8" src="images/cup.png" alt="">
+                <div class="flex items-center gap-3">
+                    <h4>Ready to get started?</h4>
+                    <button class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white font-bold">Get Started</button>
+                </div>
+            </div>
+            <!-- links -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div>
+                    <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="hover:text-orange-600" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-orange-600" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-orange-600" href="#">Insurance</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-3">Our Service</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="hover:text-orange-600" href="#">Life Insurance</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-orange-600" href="#">Car Insurance</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-orange-600" href="#">Health Insurance</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-orange-600" href="#">House Insurance</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-3">Help</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="hover:text-orange-600" href="#">FAQs</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-orange-600" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-2xl mb-3">Subscribe to our newsletter</h3>
+                    <div class="flex flex-col space-y-2">
+                        <div class="foot ">
+                            <input placeholder="Email Address" type="text" class="bg-transparent border-b-2 border-black w-4/6">
+                            <i class="fa-solid fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-center items-center"></i>
+                            <div class="flex justify-between w-2/5 mb-2 mt-8">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-4">
+                <p class="text-sm text-gray-600">© 2027 UIDesign.to - All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
